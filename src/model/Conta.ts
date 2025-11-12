@@ -1,4 +1,4 @@
-export class Conta {
+export abstract class Conta {
 
     private _numero: number;
     private _agencia: number;
@@ -82,6 +82,7 @@ export class Conta {
                 break;
         }
 
+    
         console.log("\n\n*****************************************************");
         console.log("Dados da Conta:");
         console.log("*****************************************************");
@@ -90,7 +91,6 @@ export class Conta {
         console.log("Tipo da Conta: " + tipo);
         console.log("Titular: " + this._titular);
         console.log("Saldo: " + this._saldo.toFixed(2));
-
+        }
     }
 
-}
